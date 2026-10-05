@@ -26,6 +26,12 @@ All five instruments, embedded exactly the way a profile README would embed them
 
 <img alt="four cards rising into place in a cascade" src="patterns/staggered-reveal/pattern.svg">
 
+## theme-aware
+
+<img alt="panel that re-themes itself for light and dark readers" src="patterns/theme-aware/pattern.svg">
+
+Flip your color scheme: this one file re-palettes itself — no `<picture>` wrapper.
+
 ---
 
 Static fallback check: view any `pattern.svg` in a CSS-less renderer (or with reduced motion enabled) — each shows its finished state, never an empty frame.

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180" role="img" aria-label="A panel that re-themes itself for light and dark readers">
+  <style>
+    /* attributes below carry the LIGHT palette: that is the no-CSS fallback.
+       CSS upgrades to dark when the reader prefers dark. */
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0b0806; }
+      .panel { fill: #140d08; }
+      .ink { fill: #F8F5F2; }
+      .muted { fill: #b7a496; }
+      .grid { stroke: #3a2c1e; }
+      .line { stroke: #FE9106; }
+    }
+    .draw { animation: draw 2s cubic-bezier(.4,0,.2,1) .3s both; }
+    @keyframes draw { from { stroke-dashoffset: 1; } }
+    @media (prefers-reduced-motion: reduce) { .draw { animation: none; } }
+  </style>
+
+  <rect class="bg" width="600" height="180" fill="#F8F5F2"/>
+  <rect class="panel" x="30" y="24" width="540" height="132" rx="10" fill="#efe9e2"/>
+  <g class="grid" stroke="#d8cfc4" stroke-width="1">
+    <line x1="50" y1="60" x2="550" y2="60"/>
+    <line x1="50" y1="95" x2="550" y2="95"/>
+    <line x1="50" y1="130" x2="550" y2="130"/>
+  </g>
+  <path class="draw" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"
+        d="M50 120 L130 118 L170 90 L210 132 L250 100 L340 100 L380 70 L420 138 L460 104 L550 108"
+        fill="none" stroke="#F05F03" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <text class="ink" x="50" y="48" font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#1a120b">same bytes, two readers</text>
+  <text class="muted" x="550" y="48" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#6e5c50">prefers-color-scheme</text>
+</svg>
