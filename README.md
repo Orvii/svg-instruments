@@ -24,6 +24,7 @@ GitHub strips `<script>`, inline `style=` attributes and external references fro
 | [dash-flow](patterns/dash-flow/) | dashed rail flows between nodes | looping `stroke-dashoffset` |
 | [scanline-sweep](patterns/scanline-sweep/) | a scan bar sweeps a panel | looping `translateX` on a group |
 | [breathe-glow](patterns/breathe-glow/) | glow / node pulses | opacity keyframes, staggered delays |
+| [staggered-reveal](patterns/staggered-reveal/) | cards rise into place in a cascade | one rise keyframe, per-item inline delay |
 
 Each folder holds a working `pattern.svg` and a README with the copy-paste kit and the failure modes we hit.
 

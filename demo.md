@@ -22,6 +22,10 @@ All five instruments, embedded exactly the way a profile README would embed them
 
 <img alt="glowing node with staggered rings" src="patterns/breathe-glow/pattern.svg">
 
+## staggered-reveal
+
+<img alt="four cards rising into place in a cascade" src="patterns/staggered-reveal/pattern.svg">
+
 ---
 
 Static fallback check: view any `pattern.svg` in a CSS-less renderer (or with reduced motion enabled) — each shows its finished state, never an empty frame.
