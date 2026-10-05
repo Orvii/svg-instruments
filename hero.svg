@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="svg-instruments — five animated SVG patterns that survive the GitHub sanitizer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="svg-instruments — ten animated SVG patterns that survive the GitHub sanitizer">
   <style>
     .draw { animation: draw 2.2s cubic-bezier(.4,0,.2,1) .4s both; }
     .type1 { animation: type .7s steps(12) 1.0s both; }

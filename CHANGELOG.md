@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026-10-05] - Pattern 10: bar-grow (+ gallery gap closed)
+
+### Added
+- `patterns/bar-grow/` — bars rise from the baseline via `scaleY` with `transform-box: fill-box`; README documents the viewport-origin trap (bars growing from the panel edge) and why the attribute holds the finished bar.
+- `index.html` gallery: the `progress-ring` figure was missing from the live page despite existing as a pattern; added alongside bar-grow.
+
+### Modified
+- `hero.svg` aria-label: five -> ten patterns.
+- `README.md` catalog row; `demo.md` section.
+
 ## [2026-10-05] - Initial release: nine patterns + live gallery
 
 ### Added

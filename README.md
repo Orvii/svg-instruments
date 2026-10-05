@@ -30,6 +30,7 @@ GitHub strips `<script>`, inline `style=` attributes and external references fro
 | [theme-aware](patterns/theme-aware/) | one file dresses for light and dark readers | `prefers-color-scheme` media query, light palette in attributes |
 | [status-flip](patterns/status-flip/) | status line flips healthy ↔ degraded | complementary `steps(1)` keyframes, frozen healthy under reduced motion |
 | [progress-ring](patterns/progress-ring/) | ring fills to a value and holds it | `pathLength="1"` + dasharray encodes the value, offset animates the reveal |
+| [bar-grow](patterns/bar-grow/) | bars rise from the baseline, staggered | `scaleY` from 0 with `transform-box: fill-box` + bottom origin |
 
 Each folder holds a working `pattern.svg` and a README with the copy-paste kit and the failure modes we hit.
 
