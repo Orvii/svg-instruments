@@ -15,6 +15,8 @@ GitHub strips `<script>`, inline `style=` attributes and external references fro
 2. **Degrade to the end state.** Initial visible state = finished state, set via attributes; the animation's `from` keyframe supplies the *starting* state. A renderer without CSS shows the completed picture, never an empty one.
 3. **Honor reduced motion.** Every pattern wraps its animations in `@media (prefers-reduced-motion: reduce) { … animation: none }`.
 
+**Live gallery:** [orvii.github.io/svg-instruments](https://orvii.github.io/svg-instruments/) — every pattern loaded through a plain `<img>` tag, the same sandbox GitHub applies. [demo.md](demo.md) is the in-repo equivalent.
+
 ## Catalog
 
 | Pattern | Effect | Technique |
