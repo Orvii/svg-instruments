@@ -51,3 +51,5 @@ SMIL (`<animate>`) also survives the sanitizer, but CSS keyframes give you `step
 ---
 
 Orvii — Open, Research, Vision, Innovation & Ideas. Built while dressing our own org profile; extracted so the next person doesn't rediscover the sanitizer the hard way.
+
+Part of the Orvii research set: [harness-atlas](https://github.com/Orvii/harness-atlas) · [convention-map](https://github.com/Orvii/convention-map) · [bench-notes](https://github.com/Orvii/bench-notes) · [equivalence-notes](https://github.com/Orvii/equivalence-notes) · [provider-reliability](https://github.com/Orvii/provider-reliability) · [context-file-evidence](https://github.com/Orvii/context-file-evidence) · [retractions](https://github.com/Orvii/retractions).
