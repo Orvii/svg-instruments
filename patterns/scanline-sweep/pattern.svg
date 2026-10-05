@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180" role="img" aria-label="A scan bar sweeping across a data panel">
+  <style>
+    .scan { animation: sweep 5s linear 1s infinite; }
+    @keyframes sweep { from { transform: translateX(0); } to { transform: translateX(520px); } }
+    @media (prefers-reduced-motion: reduce) { .scan { animation: none; } }
+  </style>
+
+  <rect width="600" height="180" fill="#0b0806"/>
+  <rect x="40" y="30" width="520" height="110" fill="#140d08"/>
+  <g stroke="#3a2c1e" stroke-width="1">
+    <line x1="40" y1="60" x2="560" y2="60"/>
+    <line x1="40" y1="90" x2="560" y2="90"/>
+    <line x1="40" y1="120" x2="560" y2="120"/>
+  </g>
+  <path d="M40 100 L120 100 L150 70 L180 125 L210 90 L300 90 L330 60 L360 130 L390 95 L480 95 L510 75 L560 100"
+        fill="none" stroke="#5c4c3f" stroke-width="2" stroke-linejoin="round"/>
+  <g class="scan"><rect x="40" y="30" width="2" height="110" fill="#FE7007" opacity=".85"/></g>
+</svg>

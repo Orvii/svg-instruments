@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160" role="img" aria-label="A glowing node breathing with two staggered rings">
+  <style>
+    .core { animation: breathe 3.2s ease-in-out infinite; }
+    .ring { animation: breathe 3.2s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .core, .ring { animation: none; } }
+  </style>
+
+  <rect width="600" height="160" fill="#0b0806"/>
+  <circle class="ring" cx="300" cy="80" r="52" fill="none" stroke="#F05F03" stroke-width="1.5" style="animation-delay:1.6s"/>
+  <circle class="ring" cx="300" cy="80" r="36" fill="none" stroke="#FE7007" stroke-width="1.5" style="animation-delay:.8s"/>
+  <circle class="core" cx="300" cy="80" r="18" fill="#FE9106"/>
+  <text x="300" y="146" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#b7a496">signal alive</text>
+</svg>

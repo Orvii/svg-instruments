@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120" role="img" aria-label="A dashed rail flowing between five toolchain nodes">
+  <style>
+    .flow { animation: flow 2.6s linear infinite; }
+    .node { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -24; } }
+    @keyframes pulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .flow, .node { animation: none; } }
+  </style>
+
+  <rect width="600" height="120" fill="#0b0806"/>
+  <line class="flow" x1="40" y1="55" x2="560" y2="55" stroke="#5c4c3f" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" text-anchor="middle" fill="#b7a496">
+    <g class="node"><circle cx="70" cy="55" r="6" fill="#FE9106"/><text x="70" y="92">ingest</text></g>
+    <g class="node" style="animation-delay:.6s"><circle cx="190" cy="55" r="6" fill="#FE9106"/><text x="190" y="92">transform</text></g>
+    <g class="node" style="animation-delay:1.2s"><circle cx="310" cy="55" r="6" fill="#FE9106"/><text x="310" y="92">measure</text></g>
+    <g class="node" style="animation-delay:1.8s"><circle cx="430" cy="55" r="6" fill="#FE9106"/><text x="430" y="92">verify</text></g>
+    <g class="node" style="animation-delay:2.4s"><circle cx="540" cy="55" r="6" fill="#FEAF12"/><text x="540" y="92">publish</text></g>
+  </g>
+</svg>

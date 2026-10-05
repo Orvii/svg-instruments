@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160" role="img" aria-label="A telemetry line drawing itself left to right">
+  <style>
+    .draw { animation: draw 2.2s cubic-bezier(.4,0,.2,1) .3s both; }
+    .fill { animation: rise 1s ease-out 1.8s both; }
+    @keyframes draw { from { stroke-dashoffset: 1; } }
+    @keyframes rise { from { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .draw, .fill { animation: none; } }
+  </style>
+
+  <rect width="600" height="160" fill="#0b0806"/>
+  <line x1="30" y1="110" x2="570" y2="110" stroke="#3a2c1e" stroke-width="1"/>
+
+  <path class="fill" d="M30 100 L110 100 L135 60 L160 130 L185 90 L280 90 L305 50 L330 140 L355 95 L450 95 L475 70 L500 120 L570 100 L570 150 L30 150 Z"
+        fill="#FE9106" opacity=".14" stroke="none"/>
+  <path class="draw" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"
+        d="M30 100 L110 100 L135 60 L160 130 L185 90 L280 90 L305 50 L330 140 L355 95 L450 95 L475 70 L500 120 L570 100"
+        fill="none" stroke="#FE9106" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

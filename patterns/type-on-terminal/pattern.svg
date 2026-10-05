@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200" role="img" aria-label="Terminal window: three commands type in sequence with a blinking cursor">
+  <style>
+    .t1 { animation: type .8s steps(10) .5s both; }
+    .t2 { animation: type 1.1s steps(15) 1.6s both; }
+    .t3 { animation: type .8s steps(10) 3.0s both; }
+    .c1 { opacity: 0; animation: blink 1s steps(1) .5s 1; }
+    .c2 { opacity: 0; animation: blink 1s steps(1) 1.6s 1; }
+    .c3 { opacity: 0; animation: blink 1s steps(1) 3.0s infinite; }
+    @keyframes type { from { clip-path: inset(0 100% 0 0); } }
+    @keyframes blink { 0%,60% { opacity: 1; } 60.1%,100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .t1, .t2, .t3, .c1, .c2, .c3 { animation: none; }
+      .c1, .c2, .c3 { opacity: 0; }
+    }
+  </style>
+
+  <rect width="600" height="200" rx="10" fill="#140d08"/>
+  <rect width="600" height="34" rx="10" fill="#1f150c"/>
+  <rect y="24" width="600" height="10" fill="#1f150c"/>
+  <circle cx="22" cy="17" r="5.5" fill="#FE9106"/>
+  <circle cx="42" cy="17" r="5.5" fill="#3a2c1e"/>
+  <circle cx="62" cy="17" r="5.5" fill="#3a2c1e"/>
+  <text x="300" y="22" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="12" letter-spacing="1.5" fill="#6e5c50">lab — session</text>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16">
+    <text x="28" y="76" fill="#6e5c50">$</text>
+    <text class="t1" x="48" y="76" fill="#F8F5F2">hypothesize</text>
+    <rect class="c1" x="152" y="60" width="9" height="20" fill="#FEAF12"/>
+
+    <text x="28" y="116" fill="#6e5c50">$</text>
+    <text class="t2" x="48" y="116" fill="#F8F5F2">measure --repeat 7</text>
+    <rect class="c2" x="216" y="100" width="9" height="20" fill="#FEAF12"/>
+
+    <text x="28" y="156" fill="#6e5c50">$</text>
+    <text class="t3" x="48" y="156" fill="#F8F5F2">publish</text>
+    <rect class="c3" x="118" y="140" width="9" height="20" fill="#FEAF12"/>
+  </g>
+</svg>
