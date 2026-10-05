@@ -1,6 +1,6 @@
 # Live demo
 
-All five instruments, embedded exactly the way a profile README would embed them. If you can see motion here, the pattern survives GitHub's sanitizer.
+Every instrument in the catalog, embedded exactly the way a profile README would embed them. If you can see motion here, the pattern survives GitHub's sanitizer. (The repo hero shows the original five-cell composition; the catalog below is the complete set.)
 
 ## draw-on-line
 
