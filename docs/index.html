@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>svg-instruments — live gallery</title>
+<style>
+  :root { --bg:#0b0806; --panel:#140d08; --ink:#F8F5F2; --muted:#b7a496; --line:#3a2c1e; --accent:#FE9106; }
+  html[data-theme="light"] { --bg:#F8F5F2; --panel:#efe9e2; --ink:#1a120b; --muted:#6e5c50; --line:#d8cfc4; --accent:#F05F03; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  header { padding:48px 24px 8px; max-width:960px; margin:0 auto; }
+  h1 { font-size:34px; margin:0 0 6px; letter-spacing:.5px; }
+  .sub { color:var(--accent); letter-spacing:1px; }
+  .rule { width:110px; height:3px; background:var(--accent); margin:14px 0 0; }
+  main { max-width:960px; margin:0 auto; padding:24px; display:grid; gap:28px; }
+  figure { margin:0; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:18px; }
+  figcaption { display:flex; justify-content:space-between; gap:12px; margin-top:12px; color:var(--muted); font-size:13px; }
+  figcaption a { color:var(--accent); text-decoration:none; }
+  img { width:100%; height:auto; display:block; border-radius:6px; }
+  button { font:inherit; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 14px; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  footer { max-width:960px; margin:0 auto; padding:8px 24px 56px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>svg-instruments</h1>
+  <div class="sub">animated SVG that survives the GitHub sanitizer — live gallery</div>
+  <div class="rule"></div>
+  <p style="color:var(--muted)">Every instrument below is loaded through a plain <code>&lt;img&gt;</code> tag — the same sandbox GitHub applies to SVGs in Markdown. If it animates here, it animates in your README. The button restyles this page's chrome only; the <em>theme-aware</em> pattern follows your OS/browser color-scheme setting, exactly as it would on GitHub.</p>
+  <p><button id="flip">flip page chrome</button></p>
+</header>
+<main>
+  <figure><img src="../patterns/draw-on-line/pattern.svg" alt="telemetry line drawing itself"><figcaption><span>draw-on-line</span><a href="../patterns/draw-on-line/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/type-on-terminal/pattern.svg" alt="terminal typing three commands"><figcaption><span>type-on-terminal</span><a href="../patterns/type-on-terminal/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/dash-flow/pattern.svg" alt="dashed rail flowing between nodes"><figcaption><span>dash-flow</span><a href="../patterns/dash-flow/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/scanline-sweep/pattern.svg" alt="scan bar sweeping a panel"><figcaption><span>scanline-sweep</span><a href="../patterns/scanline-sweep/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/breathe-glow/pattern.svg" alt="glowing node with staggered rings"><figcaption><span>breathe-glow</span><a href="../patterns/breathe-glow/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/staggered-reveal/pattern.svg" alt="four cards rising into place"><figcaption><span>staggered-reveal</span><a href="../patterns/staggered-reveal/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/theme-aware/pattern.svg" alt="panel re-theming for light and dark"><figcaption><span>theme-aware — flip the scheme above</span><a href="../patterns/theme-aware/README.md">kit + failure modes</a></figcaption></figure>
+  <figure><img src="../patterns/status-flip/pattern.svg" alt="status line flipping healthy to degraded"><figcaption><span>status-flip</span><a href="../patterns/status-flip/README.md">kit + failure modes</a></figcaption></figure>
+</main>
+<footer>
+  Orvii — Open, Research, Vision, Innovation &amp; Ideas. Patterns honor <code>prefers-reduced-motion</code> and degrade to finished stills without CSS. Repo: <a style="color:var(--accent)" href="https://github.com/Orvii/svg-instruments">Orvii/svg-instruments</a>.
+</footer>
+<script>
+  const b = document.getElementById('flip');
+  b.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    document.documentElement.setAttribute('data-theme', cur === 'light' ? 'dark' : 'light');
+  });
+</script>
+</body>
+</html>
