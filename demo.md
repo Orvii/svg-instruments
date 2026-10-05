@@ -38,6 +38,10 @@ Flip your color scheme: this one file re-palettes itself — no `<picture>` wrap
 
 <img alt="status line flipping between healthy and degraded" src="patterns/status-flip/pattern.svg">
 
+## progress-ring
+
+<img alt="progress rings filling to seventy and thirty-five percent" src="patterns/progress-ring/pattern.svg">
+
 ---
 
 Static fallback check: view any `pattern.svg` in a CSS-less renderer (or with reduced motion enabled) — each shows its finished state, never an empty frame.

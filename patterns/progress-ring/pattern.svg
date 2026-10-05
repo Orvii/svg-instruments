@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160" role="img" aria-label="A progress ring filling to seventy percent with a counting label">
+  <style>
+    .arc { animation: fill 1.6s cubic-bezier(.4,0,.2,1) .3s both; }
+    .lbl { animation: rise .5s ease-out 1.4s both; }
+    @keyframes fill { from { stroke-dashoffset: 1; } }
+    @keyframes rise { from { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .arc, .lbl { animation: none; } }
+  </style>
+
+  <rect width="600" height="160" fill="#0b0806"/>
+
+  <!-- track -->
+  <circle cx="120" cy="80" r="46" fill="none" stroke="#3a2c1e" stroke-width="8"/>
+  <!-- arc: pathLength=1, dasharray shows 70% -->
+  <circle class="arc" cx="120" cy="80" r="46" fill="none" stroke="#FE9106" stroke-width="8"
+          stroke-linecap="round" pathLength="1" stroke-dasharray="0.7 0.3" stroke-dashoffset="0"
+          transform="rotate(-90 120 80)"/>
+  <g class="lbl" font-family="ui-monospace, Menlo, monospace" text-anchor="middle">
+    <text x="120" y="86" font-size="20" fill="#F8F5F2">70%</text>
+  </g>
+
+  <!-- second ring, different value, same technique -->
+  <circle cx="300" cy="80" r="46" fill="none" stroke="#3a2c1e" stroke-width="8"/>
+  <circle class="arc" cx="300" cy="80" r="46" fill="none" stroke="#FEAF12" stroke-width="8"
+          stroke-linecap="round" pathLength="1" stroke-dasharray="0.35 0.65" stroke-dashoffset="0"
+          transform="rotate(-90 300 80)" style="animation-delay:.6s"/>
+  <g class="lbl" font-family="ui-monospace, Menlo, monospace" text-anchor="middle" style="animation-delay:1.7s">
+    <text x="300" y="86" font-size="20" fill="#F8F5F2">35%</text>
+  </g>
+
+  <text x="400" y="72" font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#b7a496">dasharray = value, remainder</text>
+  <text x="400" y="96" font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#6e5c50">attribute holds the finished arc;</text>
+  <text x="400" y="116" font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#6e5c50">keyframe only animates the reveal</text>
+</svg>
