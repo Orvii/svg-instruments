@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140" role="img" aria-label="A status line that flips from healthy to degraded and back, on a loop">
+  <style>
+    .good { animation: good 6s steps(1) infinite; }
+    .bad { animation: bad 6s steps(1) infinite; }
+    @keyframes good { 0%,60% { opacity: 1; } 61%,85% { opacity: 0; } 86%,100% { opacity: 1; } }
+    @keyframes bad { 0%,60% { opacity: 0; } 61%,85% { opacity: 1; } 86%,100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .good, .bad { animation: none; } .bad { opacity: 0; } }
+  </style>
+
+  <rect width="600" height="140" fill="#0b0806"/>
+  <rect x="30" y="30" width="540" height="80" rx="10" fill="#140d08" stroke="#3a2c1e"/>
+
+  <g class="good" font-family="ui-monospace, Menlo, monospace" font-size="16">
+    <circle cx="70" cy="70" r="8" fill="#7dc98f"/>
+    <text x="95" y="76" fill="#7dc98f">all systems nominal</text>
+    <text x="540" y="76" text-anchor="end" fill="#5c4c3f">p99 412ms</text>
+  </g>
+  <g class="bad" font-family="ui-monospace, Menlo, monospace" font-size="16">
+    <circle cx="70" cy="70" r="8" fill="#F05F03"/>
+    <text x="95" y="76" fill="#F05F03">degraded — retrying</text>
+    <text x="540" y="76" text-anchor="end" fill="#5c4c3f">p99 22.4s</text>
+  </g>
+</svg>

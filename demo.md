@@ -30,6 +30,8 @@ Every instrument in the catalog, embedded exactly the way a profile README would
 
 <img alt="panel that re-themes itself for light and dark readers" src="patterns/theme-aware/pattern.svg">
 
+
+
 Flip your color scheme: this one file re-palettes itself — no `<picture>` wrapper.
 
 ---
