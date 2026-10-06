@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026-10-06] - pattern 11: share-split
+
+### Added
+- `patterns/share-split/` — a 100% stacked share bar whose segments grow in from the left (scaleX + fill-box origin, staggered); README documents the fill-box trap on the horizontal axis, the mid-growth gap, share-sum rounding, and color-blind lightness ordering. Live in harness-atlas as the per-capability census row.
+- Gallery figure + hero aria updated to eleven patterns.
+
 ## [2026-10-05] - Pattern 10: bar-grow (+ gallery gap closed)
 
 ### Added

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120" role="img" aria-label="A 100% stacked share bar whose segments grow in from the left, one after another">
+  <title>share-split — a stacked share bar that assembles segment by segment</title>
+  <style>
+    .seg { transform-box: fill-box; transform-origin: left; animation: split .7s cubic-bezier(.4,0,.2,1) both; }
+    .s1 { animation-delay: .1s; } .s2 { animation-delay: .35s; }
+    .s3 { animation-delay: .6s; } .s4 { animation-delay: .85s; }
+    @keyframes split { from { transform: scaleX(0); } }
+    .lbl { font: 600 10px ui-monospace, Menlo, monospace; fill: #b7a496; }
+    @media (prefers-reduced-motion: reduce) { .seg { animation: none; } }
+  </style>
+  <rect width="480" height="120" fill="#0b0806"/>
+  <text class="lbl" x="20" y="34">documented yes / partial / no / unknown</text>
+  <!-- one row of the census: widths are the shares, segments grow in order -->
+  <g>
+    <rect class="seg s1" x="20" y="48" width="228" height="18" fill="#FE9106"/>
+    <rect class="seg s2" x="248" y="48" width="96" height="18" fill="#FEAF12"/>
+    <rect class="seg s3" x="344" y="48" width="76" height="18" fill="#5c4c3f"/>
+    <rect class="seg s4" x="420" y="48" width="40" height="18" fill="#6e5c50"/>
+  </g>
+  <text class="lbl" x="20" y="92">16/25 doc</text>
+  <text class="lbl" x="420" y="92">2 ?</text>
+</svg>
