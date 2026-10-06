@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you cite this research set, please use this metadata."
+type: dataset
+title: "svg-instruments — animated SVG patterns that render data as instruments"
+authors:
+  - name: "Orvii"
+    alias: "Orvii collective"
+identifiers:
+  - type: url
+    value: "https://github.com/Orvii/svg-instruments"
+repository-code: "https://github.com/Orvii/svg-instruments"
+version: "1.4.0"
+date-released: "2026-10-06"
+notes: "Ten reusable GitHub-safe animated SVG patterns with documented traps."
